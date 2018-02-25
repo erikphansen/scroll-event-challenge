@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: silver;
+}
+
+.wrapper {
+  position: relative;
+  width: 70%;
+  height: 90vh;
+  margin: 5vh auto 0;
+  background: white;
+}
+
+.content {
+  height: 90vh;
+  overflow-y: auto;
+}
+
+.book {
+  padding: 0 20%;
+}
+
+.book > p {
+  padding-bottom: 1em;
+}
+
+.book > p:first-of-type {
+  padding-top: 1em;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  transition: 0.5s;
+}
+
+a:hover .nav {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.nav-prev {
+  left: 0;
+}
+
+.nav-next {
+  right: 0;
+}
